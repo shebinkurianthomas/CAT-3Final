@@ -168,7 +168,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>
 &emsp;  &emsp;  <img src="img/2.JPG" width="500" height="200">
 </p>
+<script>
+  // Add a click event listener to the button
+  document.getElementById('btnpy').addEventListener('click', function(event) {
+    // Get the text content of the clicked button
+    var text = this.textContent.trim();
 
+    // Push a Click Text data layer variable with the text content
+    dataLayer.push({
+      'event': 'Click',
+      'Click Text': text
+    });
+  });
+</script>
 &emsp;  &emsp;  &emsp;  &emsp;  <button><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
 <button id="btnweb" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 
